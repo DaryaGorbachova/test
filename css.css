@@ -1,12 +1,13 @@
 .container {
     max-width: 1200px;  
     margin: 0 auto;
-    background-color:rgb(255, 255, 242);
-    background-image: /autumn.png;
     font-size: 20px ;
     color:hsl(0, 0%, 30%);
     border: 1px solid rgba(77, 77, 77, 0.2);
     font-family: 'Tahoma';
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+
   }
 a {
     font-weight: 200;
@@ -37,3 +38,13 @@ h1 {
     }
 }
 
+body {
+    
+    background-color:rgb(255, 255, 242);
+    background-image: url('autumn.png');
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
