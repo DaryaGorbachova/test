@@ -1,0 +1,50 @@
+.container {
+    max-width: 1200px;  
+    margin: 0 auto;
+    font-size: 20px ;
+    color:hsl(0, 0%, 30%);
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    font-family: 'Tahoma';
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+
+  }
+a {
+    font-weight: 200;
+    text-decoration: none;
+    color: rgb(255, 106, 106);
+}
+h1 {
+    text-align: center;
+    animation: color-size-change 8s infinite;
+    color:rgb(255, 106, 106);
+}
+@keyframes color-size-change {
+    0% {
+        color:rgb(255, 106, 106);
+
+    }
+    15% {
+        color:rgb(106, 121, 255);
+
+    }
+    30% {
+        color:rgb(255, 106, 106);
+
+    }
+    100% {
+        color:rgb(255, 106, 106);
+
+    }
+}
+
+body {
+    
+    background-color:#c6c6c5;
+    background-image: url('autumn.png');
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
