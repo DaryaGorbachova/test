@@ -1,0 +1,157 @@
+:root {
+    --red: rgb(255, 106, 106);
+    --black: hsl(0, 0%, 30%);
+    --background-col: rgba(255, 255, 255, 0.5);
+    --border-col: rgba(77, 77, 77, 0.2);
+    --blue: rgb(106, 121, 255);
+    --yellow: #e2b559;
+    --orange: #ec8a39;
+}
+
+
+.container {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform:uppercase;
+    
+    color:var(--black);
+    font-family: 'Tahoma';
+    text-align: center;
+  }
+a:link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--black);
+}
+a:visited {
+    color: var(--black);
+}
+h1 {
+    text-align: center;
+    animation: color-size-change 15s infinite;
+}
+h1:hover {
+    animation: color-size-change 3s infinite;
+}
+
+@keyframes color-size-change {
+    0% {
+        color:var(--red);
+
+    }
+    50% {
+        color:var(--blue);
+
+    }
+
+    100% {
+        color:var(--red);
+
+    }
+}
+
+body {
+    
+    background-color:rgb(226, 226, 226);
+
+}
+
+input {
+    background-color: white;
+    border:solid 1px hsl(0, 0%, 71%);
+    border-radius: 20px;
+    height: 20px;
+}
+
+button {
+    background-color: var(--red);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    color:white;
+    font: bold 15px Verdana;
+    box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
+}
+
+button:hover {
+box-shadow:0px 0px 3px hsl(0, 0%, 30%);
+}
+
+footer {
+    position: relative;
+    max-width: 500px;
+    margin: auto;  
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+    font-size: 14px ;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Tahoma';
+    border-top:solid 2px var(--border-col);
+    padding: 15px;
+    text-align: center;
+}
+.games {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 4fr 6fr 4fr;
+    grid-gap: 8px;
+}
+
+.games > div{
+    padding: 10px;
+    border-radius: 10px;  
+}
+
+.games > div:hover {
+    box-shadow: 0px 0px 5px var(--black)
+}
+
+#game1 {
+    background-color: var(--yellow);
+
+}
+#game2 {
+    background-color: var(--red);
+}
+
+#game3 {
+    background-color: var(--orange);
+
+}
+
+#game4 {
+    background-color: #e48d45;
+
+}
+
+#game5 {
+    background-color: #eecf90;
+
+}
+
+#game6 {
+    background-color: rgb(252, 73, 73);
+
+}
+
+#game7 {
+    background-color: rgb(248, 136, 136);
+
+}
+
+#game8 {
+    background-color: #eba063;
+
+}
+
+#game9 {
+    background-color: var(--yellow);
+
+}
+
+#game10 {
+    background-color: #c9844c;
+
+}
