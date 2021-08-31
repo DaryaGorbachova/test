@@ -3,6 +3,7 @@ const linksUnsplash = document.getElementById('linksunsplash');
 const photos = document.getElementById('photos');
 const playbtn = document.getElementById('play');
 const nextbtn = document.getElementById('next');
+let passed1 = false;
 
 unsplashLink.onmouseenter = function () {
     unsplashLink.style.color = 'white';
@@ -43,8 +44,11 @@ nextbtn.addEventListener('click', () => {
 
 function nextLvl () {
     removeActive();
-    if (activePhoto > 9) alert("Congratulations! You've passed all the levels!")
-    else {            
+    if (activePhoto > 9) {
+        alert("Congratulations! You've passed all the levels!");
+        passed1 = true;
+
+    } else {            
         photo.forEach(photo => {
             activePhoto++;
             photo.style.backgroundImage = `url(materials/photo${activePhoto}.jpg)`;
@@ -54,18 +58,3 @@ function nextLvl () {
     
 }
         
-
-    /*
-    activePhoto++;
-
-    photo.src = `photo${activePhoto}.jpg`;
-    for(let i = 0; i < presets.length; i++) {
-        presets[i].src = `photo${activePhoto}.jpg`
-    }
-    }
-
-
-    photo.forEach(photo => {
-        photo.style.filter = 'none'   
-        })
-    */

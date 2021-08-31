@@ -10,6 +10,8 @@
 
 
 .container {
+    max-width: 1000px;
+    margin: auto;
     font-size: 24px;
     font-weight: 600;
     text-transform:uppercase;
@@ -93,9 +95,9 @@ footer {
 }
 .games {
     display: grid;
-    height: 90vh;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5fr 4fr 6fr 4fr;
+    grid-template-rows: 5fr 7fr 6fr 5fr;
     grid-gap: 8px;
 }
 
