@@ -6,20 +6,43 @@
     --blue: rgb(106, 121, 255);
     --yellow: #e2b559;
     --orange: #ec8a39;
+    --green: rgb(105, 180, 105);
+    --lightgreen: rgb(233, 248, 233);
+    --lightred: rgb(255, 236, 236);
 }
 
 
 .container {
     max-width: 1000px;  
-    margin: 0 auto;
+    margin: 8px auto;
     font-size: 20px ;
     color:hsl(0, 0%, 30%);
     border: 1px solid rgba(77, 77, 77, 0.2);
     font-family: 'Tahoma';
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
-
+    text-align: center;
   }
+
+.questions {
+    max-width: 1000px;  
+    margin: 8px auto;
+    font-size: 20px ;
+    color:hsl(0, 0%, 30%);
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    font-family: 'Tahoma';
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    text-align: center;
+    opacity: 00%;
+    transition: 0.5s;
+}
+
+.questions > div {
+    opacity: 0%;
+    transition: 0.5s;
+}
+
 a:link {
     font-weight: 200;
     text-decoration: none;
@@ -33,6 +56,13 @@ h1 {
     animation: color-size-change 15s infinite;
 }
 h1:hover {
+    animation: color-size-change 3s infinite;
+}
+h2 {
+    text-align: center;
+    animation: color-size-change 15s infinite;
+}
+h2:hover {
     animation: color-size-change 3s infinite;
 }
 
@@ -55,7 +85,7 @@ h1:hover {
 body {
     
     background-color:#c6c6c5;
-    background-image: url('autumn.png');
+    background-image: url('/materials/autumn.png');
     background-size: 1520px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -65,10 +95,15 @@ body {
 
 input {
     background-color: white;
-    border:solid 1px hsl(0, 0%, 71%);
+    border:solid 3px hsl(0, 0%, 71%);
     border-radius: 20px;
     height: 20px;
+    outline: none;
+    padding: 5px 10px;
+
 }
+
+
 
 button {
     margin:auto;
@@ -78,12 +113,44 @@ button {
     padding: 8px 30px;
     border-radius: 20px;
     color:white;
-    font: bold 15px Verdana;
+    font: 16px Verdana;
     box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
+}
+
+#outputCorAns {
+    margin:auto;
+    margin-top: 20px;
+    background-color: var(--green);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    color:white;
+    font: 15px Verdana;
+    box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
+    opacity: 0%;
+    transition: opacity 0.8s;
 }
 
 button:hover {
 box-shadow:0px 0px 3px hsl(0, 0%, 30%);
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+}
+.controls a {
+    color: white;
+}
+
+.controls a:visited {
+    color: white;
+}
+
+
+#menu {
+    opacity: 0%;
+    transition: opacity 0.8s;
 }
 
 footer {
@@ -100,4 +167,3 @@ footer {
     padding: 15px;
     text-align: center;
 }
-
