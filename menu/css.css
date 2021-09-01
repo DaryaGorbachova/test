@@ -10,12 +10,12 @@
 
 
 .container {
+
     max-width: 1000px;
     margin: auto;
     font-size: 24px;
     font-weight: 600;
     text-transform:uppercase;
-    
     color:var(--black);
     font-family: 'Tahoma';
     text-align: center;
@@ -53,9 +53,7 @@ h1:hover {
 }
 
 body {
-    
     background-color:rgb(226, 226, 226);
-
 }
 
 input {
@@ -79,11 +77,45 @@ button:hover {
 box-shadow:0px 0px 3px hsl(0, 0%, 30%);
 }
 
+#unsplashlink {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 14px ;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Tahoma';
+    padding: 2px;
+    text-align: center;
+}
+
+#linksunsplash {
+    position: relative;
+    margin:auto;    
+    margin-top: 0px;
+    padding: 3px;
+    max-width: 150px;
+    border:solid 1px var(--border-col);
+    background-color: var(--background-col);
+    opacity: 0%;
+    transition-duration: 0.2s;
+}
+
+#linksunsplash a:link {
+    color: var(--black)
+}
+
+#linksunsplash a:visited {
+    color: var(--border-col)
+}
+
+
 footer {
     position: relative;
     max-width: 500px;
     margin: auto;  
-    margin-top: 70px;
+    margin-top: 5px;
     margin-bottom: 20px;
     margin-bottom: 0px;
     font-size: 14px ;
@@ -99,6 +131,16 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 5fr 7fr 6fr 5fr;
     grid-gap: 8px;
+}
+
+@media only screen and (max-width:  550px) {
+    .games{
+        display:grid;
+        height: 150vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 3fr 2fr 4fr 2fr 3fr 1fr 4fr 3fr 2fr 4fr;
+        grid-gap:8px;
+    }
 }
 
 .games > div{
@@ -120,6 +162,7 @@ footer {
 
 #game3 {
     background-color: var(--orange);
+    backdrop-filter: blur(10px);
 
 }
 
@@ -154,6 +197,16 @@ footer {
 }
 
 #game10 {
+    background-color: var(--yellow);
+
+}
+
+#game11 {
+    background-color: var(--red);
+
+}
+
+#game12 {
     background-color: #c9844c;
 
 }

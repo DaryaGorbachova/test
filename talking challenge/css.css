@@ -80,7 +80,16 @@ button {
     box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
 }
 
+.controls {
+    display: flex;
+    flex-direction: row;
+}
+
 #next {
+    opacity: 0%;
+}
+
+#menu {
     opacity: 0%;
 }
 a:link {
