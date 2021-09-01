@@ -1,5 +1,4 @@
 const playbtn = document.getElementById('play');
-const menubtn = document.getElementById('menu');
 const checkbtn = document.querySelectorAll('.check')
 const input = document.querySelectorAll('.questions input')
 const outputCorAns = document.getElementById('outputCorAns')
@@ -16,7 +15,6 @@ playbtn.addEventListener('click', () => {
     questionsContainer.style.opacity = '100%';
     questions[0].style.opacity = '100%';
     outputCorAns.style.opacity = '100%';
-    menubtn.style.opacity = '100%';
 })
 
 checkbtn.forEach(checkbtn => checkbtn.addEventListener('click', () => {

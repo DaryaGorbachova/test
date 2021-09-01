@@ -3,7 +3,6 @@ const linksUnsplash = document.getElementById('linksunsplash');
 const photos = document.getElementById('photos');
 const playbtn = document.getElementById('play');
 const nextbtn = document.getElementById('next');
-const menubtn = document.getElementById('menu');
 
 let passed1 = false;
 
@@ -49,7 +48,6 @@ function nextLvl () {
     if (activePhoto > 9) {
         alert("Congratulations! You've passed all the levels!");
         passed1 = true;
-        menubtn.style.opacity = '100%';
         nextbtn.style.opacity = '0%';
 
     } else {            
