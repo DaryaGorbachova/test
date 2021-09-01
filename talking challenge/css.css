@@ -1,0 +1,198 @@
+:root {
+    --red: rgb(255, 106, 106);
+    --black: hsl(0, 0%, 30%);
+    --background-col: rgba(255, 255, 255, 0.5);
+    --border-col: rgba(77, 77, 77, 0.2);
+    --blue: rgb(106, 121, 255);
+}
+
+
+.container {
+    max-width: 1000px;  
+    margin: 0 auto;
+    font-size: 20px ;
+    color:hsl(0, 0%, 30%);
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    font-family: 'Tahoma';
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+
+  }
+a:link {
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--red);
+}
+a:visited {
+    color: var(--red);
+}
+h1 {
+    text-align: center;
+    animation: color-size-change 15s infinite;
+}
+h1:hover {
+    animation: color-size-change 3s infinite;
+}
+
+@keyframes color-size-change {
+    0% {
+        color:var(--red);
+
+    }
+    50% {
+        color:var(--blue);
+
+    }
+
+    100% {
+        color:var(--red);
+
+    }
+}
+
+body {
+    
+    background-color:#c6c6c5;
+    background-image: url('/materials/autumn.png');
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+input {
+    background-color: white;
+    border:solid 1px hsl(0, 0%, 71%);
+    border-radius: 20px;
+    height: 20px;
+}
+
+button {
+    margin:auto;
+    margin-top: 20px;
+    background-color: var(--red);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    color:white;
+    font: 15px Verdana;
+    box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+}
+
+#next {
+    opacity: 0%;
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
+
+button:hover {
+box-shadow:0px 0px 3px var(--black);
+}
+
+footer {
+    position: relative;
+    max-width: 500px;
+    margin: auto;  
+    margin-top: 2px;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+    font-size: 14px ;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Tahoma';
+    border-top:solid 2px var(--border-col);
+    padding: 2px;
+    text-align: center;
+}
+
+#unsplashlink {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+    font-size: 14px ;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Tahoma';
+    padding: 2px;
+    text-align: center;
+}
+
+#linksunsplash {
+    position: relative;
+    margin:auto;    
+    margin-top: 120px;
+    padding: 3px;
+    max-width: 150px;
+    border:solid 1px var(--border-col);
+    background-color: var(--background-col);
+    opacity: 0%;
+    transition-duration: 0.2s;
+}
+
+#linksunsplash a:link {
+    color: var(--black)
+}
+
+#linksunsplash a:visited {
+    color: var(--border-col)
+}
+
+#photos {
+    margin: auto;
+    max-width: 1000px;
+    padding: 10px;
+    height: 100%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    text-align: center;
+    opacity: 0%;
+}
+
+.photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 8px;
+    flex: 0.5;
+    flex-direction: row;
+    transition: all 700ms ease;
+    filter: blur(5px) grayscale(100%);
+}
+
+#photos > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.photo.active {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 8px;
+    flex-direction: row;
+    flex: 5;
+    transition: transform 0.5s ease-in; 
+    filter: none;
+}
+
