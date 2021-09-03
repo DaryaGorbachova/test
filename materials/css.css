@@ -55,7 +55,7 @@ h1:hover {
 body {
     
     background-color:#c6c6c5;
-    background-image: url('autumn.png');
+    background-image: url('../materials/autumn.png');
     background-size: 1520px;
     background-repeat: no-repeat;
     background-attachment: fixed;

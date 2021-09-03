@@ -1,0 +1,218 @@
+:root {
+    --red: rgb(255, 106, 106);
+    --black: hsl(0, 0%, 30%);
+    --background-col: rgba(255, 255, 255, 0.5);
+    --border-col: rgba(77, 77, 77, 0.2);
+    --blue: rgb(106, 121, 255);
+    --yellow: #e2b559;
+    --orange: #ec8a39;
+    --green: rgb(105, 180, 105);
+    --lightgreen: rgb(233, 248, 233);
+    --lightred: rgb(255, 236, 236);
+
+    --height: 100px;
+    --width: 100px;
+}
+
+
+.container {
+    max-width: 1000px;  
+    margin: 0 auto;
+    font-size: 20px ;
+    color:hsl(0, 0%, 30%);
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    font-family: 'Tahoma';
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+  }
+
+.objectsnames {
+    margin-top: 15px;
+
+    font-size: 26px;
+    transition: 0.8s ease;
+    text-align: center;    
+}
+
+.tasks {
+    max-width: 1450px;  
+    margin: 8px auto;
+    font-size: 20px ;
+    color:hsl(0, 0%, 30%);
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    font-family: 'Tahoma';
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    opacity: 0%;
+    transition: 0.5s ease;
+
+  }
+
+  .task {
+    opacity: 0%;
+  }
+
+a:link {
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--red);
+}
+a:visited {
+    color: var(--red);
+}
+h1 {
+    text-align: center;
+    animation: color-size-change 15s infinite;
+}
+h1:hover {
+    animation: color-size-change 3s infinite;
+}
+
+@keyframes color-size-change {
+    0% {
+        color:var(--red);
+
+    }
+    50% {
+        color:var(--blue);
+
+    }
+
+    100% {
+        color:var(--red);
+
+    }
+}
+
+body {
+    
+    background-color:#c6c6c5;
+    background-image: url('../materials/autumn.png');
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+input {
+    background-color: white;
+    border:solid 1px hsl(0, 0%, 71%);
+    border-radius: 20px;
+    height: 20px;
+}
+
+button {
+    margin:auto;
+    margin-top: 20px;
+    background-color: var(--red);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    color:white;
+    font: bold 15px Verdana;
+    box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
+}
+
+button:hover {
+box-shadow:0px 0px 3px hsl(0, 0%, 30%);
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+}
+.controls a {
+    color: white;
+}
+
+.controls a:visited {
+    color: white;
+}
+
+.outputCorAns {
+    margin:auto;
+    margin-top: 20px;
+    background-color: var(--green);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    color:white;
+    font: 15px Verdana;
+    box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
+    opacity: 100%;
+    transition: opacity 0.8s;
+}
+
+footer {
+    position: relative;
+    max-width: 500px;
+    margin: auto;  
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+    font-size: 14px ;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Tahoma';
+    border-top:solid 2px var(--border-col);
+    padding: 15px;
+    text-align: center;
+}
+
+
+#unsplashlink {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 14px ;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Tahoma';
+    padding: 2px;
+    text-align: center;
+}
+
+#linksunsplash {
+    position: relative;
+    margin:auto;    
+    margin-top: 0px;
+    padding: 3px;
+    max-width: 150px;
+    border:solid 1px var(--border-col);
+    background-color: var(--background-col);
+    opacity: 0%;
+    transition-duration: 0.2s;
+}
+
+#linksunsplash a:link {
+    color: var(--black)
+}
+
+#linksunsplash a:visited {
+    color: var(--border-col)
+}
+
+.wrong {
+    position: absolute;
+    font-size: 64px;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--red);
+}
+
+.find1 {
+    position: relative;
+    transition: opacity 0.5s ease;    
+}
+
+
+@keyframes flick {
+    0% {opacity: 100%;}
+    50% {opacity: 20%;}
+    100% {opacity: 100%;}
+}
+
+#photo1 {
+    background-color: var(--red);
+}

@@ -41,8 +41,14 @@ const altAnswers = {
     1: 'pharmacy',
     2: 'post office',
     4: 'shelf',
-    5: 'refridgerator',
-    6: "baker's"
+    5: 'refrigerator',
+    6: "baker's",
+    7: 'ice rink',
+    8: 'bed',
+}
+const altAnswers2 = {
+    1: 'drugstore',
+    4: 'bookshelf',
 }
 
 outputCorAns.innerHTML = `${correctAnswers}/${input.length}`;
@@ -57,7 +63,9 @@ function levelChange() {
 function check () {
     dealWithInput();
     
-    if (answer === answers[questionNum] || answer === altAnswers[questionNum]) correct = true;
+    if (answer === answers[questionNum] 
+        || answer === altAnswers[questionNum]
+        || answer === altAnswers2[questionNum]) correct = true;
     else correct = false;
     if (correct === true) {
         input[questionNum].style.border = 'solid 3px var(--green)';
