@@ -34,7 +34,7 @@ function checkQuestions () {
     }
 
     if (answers.length !== correctAnswers.length) {
-        warning.innerHTML = 'Answer all the question first!'
+        warning.innerHTML = 'Answer all the questions first!'
         return false;
     } 
     warning.style.display = 'none';
