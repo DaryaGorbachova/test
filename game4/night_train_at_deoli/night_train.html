@@ -7,6 +7,25 @@
     <title>The Night Train at Deoli</title>
     <link rel='icon' href='icon.png'>
     <link rel='stylesheet' href='style.css'>
+
+    <script>
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
 </head>
 <body>
     <div class='container'>
@@ -15,11 +34,47 @@
     </div>
     <div class='container'>
         <p>Do the prelistening task first, then listen to the audio and do the rest of the exercises.</p>
+
+        <div class='task'>
+            <p id='prelistening'>Prelistening task</p>
+            <div class='task1'>
+                Study the pronunciation of the following nouns and connect them with their pictures.
+                <div class='drag'  ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p id='drag1' draggable="true" ondragstart="drag(event)">shawl</p>
+                    <p id='drag2' draggable="true" ondragstart="drag(event)">stationmaster</p>
+                    <p id='drag3' draggable="true" ondragstart="drag(event)">railway</p>
+                    <p id='drag4' draggable="true" ondragstart="drag(event)">jungle</p>
+                    <p id='drag5' draggable="true" ondragstart="drag(event)">whistle</p>
+             </div>    
+             <div class='dragaim'>
+                 <span id='aim1' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+                 <span id='aim2' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+                 <span id='aim3' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+                 <span id='aim4' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+                 <span id='aim5' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+             </div>
+            <div class='pictures'>
+                
+                <img src="staitionmaster.jpg" alt="staitionmaster" width='20%'>
+                <img src="shawl.jpg" alt="shawl" width='20%'>
+                <img src="whistle.jpg" alt="whistle" width='20%'>
+                <img src="railway.jpg" alt="railway" width='20%'>
+                <img src="jungle.jpg" alt="jungle" width='20%'>
+           
+            </div>
+                <p class='warning'></p>
+            <div class='controls'>
+                <button class='submit'>Check</button>
+                <p class='outputCorAns'>0/6</p>
+            </div>
+            </div>
+        </div>         
+
         <audio src='Ruskin Bond - The Night Train at Deoli.mp3' controls></audio>
         <div class='task'>
            <p id='questions'>Questions</p> 
            <div class='task1'>
-               <form name='form1'>
+               <form name='form1' class='form1'>
                        <p>What moment of life the author will never forget?</p>
             <label class='io'>
                 <input type='radio' name='q1' value='a'>                
@@ -118,10 +173,10 @@
                 no but he's planning to do so
             </label class='io'><br>
                 </form>
-                <p id='warning'></p>
+                <p class='warning'></p>
                 <div class='controls'>
                 <button class='submit'>Check</button>
-                <p id='outputCorAns'>0/6</p>
+                <p class='outputCorAns'>0/6</p>
                 <button class='try'>Try again</button>
             </div>
                 
@@ -129,8 +184,30 @@
         </div>
         
         <div class='task'>
-            <p id='matching'>Matching</p>
-            <div class='task1'></div>
+            <p id='fillgaps'>Fill in the gaps</p>
+            <div class='task1'>
+                <p>While listening to the text again, pay special attention to
+                     these sentences and fill in the gaps.
+                </p>
+                    <ol class='fillgaps'>
+                        <li>I was determined not to stand 
+                        <input type='text'> in front of her, unable to speak or express my feelings.
+                    </li>
+                    <li>Feeling <input type="text"> and worried, I took the train back, intending to ask 
+                        <input type='text'> questions of the stationmaster at Deoli.
+                    </li>
+                    <li>One day I would have to break my journey there, spend a day in the town, 
+                        make enquiries, and find the girl who had stolen my heart with nothing but a look from her dark, 
+                        <input type="text"> eyes.</li>
+                    <li>I was afraid of <input type="text"> what had really happened to the girl. </li>
+                    <li>I always look out of the train window, half expecting to see the same <input type="text"> face smiling up at me.</li>
+                    </ol>
+                    <p class='warning'></p>
+                    <div class='controls'>
+                        <button class='submit'>Check</button>
+                        <p class='outputCorAns'>0/6</p>
+                    </div>
+            </div>
         </div>    
 
         <div class='task'>
@@ -139,6 +216,7 @@
                 <ul>
                 <li>What do you think is the point of the story?</li>
                 <li>What the main character could have done to avoid the situation?</li>
+                <li>Have you ever been in a situation like this?</li>
                 </ul>
             </div>
 

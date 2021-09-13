@@ -4,18 +4,22 @@
     --background-col: rgba(255, 255, 255, 0.65);
     --border-col: rgba(77, 77, 77, 0.2);
     --blue: rgb(106, 121, 255);
+    --lightblue: rgb(166, 175, 255);    
     --yellow: #e2b559;
     --orange: #ec8a39;
     --green: rgb(105, 180, 105);
     --lightgreen: rgb(233, 248, 233);
     --lightred: rgb(255, 236, 236);
+    --lightyellow: #ffe8bb;
+    --lightorange: #ffdec1;
+
 }
 
 
 .container {
     max-width: 1000px;  
     margin: 10px auto;
-    font-size: 20px ;
+    font-size: 20px;
     color:hsl(0, 0%, 30%);
     border: 1px solid rgba(77, 77, 77, 0.2);
     font-family: 'Tahoma';
@@ -28,7 +32,51 @@
     
 }
 
-  #outputCorAns {
+.drag {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    border-top: 2px solid var(--border-col);
+    border-bottom: 2px solid var(--border-col);
+    line-height: 15px;
+    padding: 20px;
+}
+
+.drag p {
+    text-align: center;
+}
+
+.dragaim {
+    display: flex;
+    margin-bottom: 4px;
+    line-height: 0px;
+}
+.dragaim > span {
+    width: 20%;
+    padding: 20px; 
+    border-radius: 8px;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+#aim1 {
+    background-color: var(--lightyellow);
+}
+#aim2 {
+    background-color: var(--lightorange);
+}
+#aim3 {
+    background-color: var(--lightyellow);
+}
+#aim4 {
+    background-color: var(--lightorange);
+}
+#aim5 {
+    background-color: var(--lightyellow);
+}
+
+  .outputCorAns {
     margin:auto;
     width: 50px;
     margin-top: 20px;
@@ -42,6 +90,11 @@
     box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
     opacity: 0%;
     transition: opacity 0.8s;
+}
+
+.pictures {
+    display: flex;
+    
 }
 
   .task {
@@ -59,12 +112,16 @@
   }
 
   .task1 {
-      display: none;
+      display: block;
       background-color: white;
       padding: 10px;
       border-radius: 15px;
       text-align: left;
       cursor: auto;
+  }
+
+ .fillgaps li {
+      margin-bottom: 20px;
   }
 
   input {
@@ -74,6 +131,7 @@
     height: 20px;
     outline: none;
     padding: 5px 10px;
+    margin-right: 5px;
 }
 
 
@@ -125,7 +183,11 @@ body {
 }
 
 
-#warning {
+.warning {
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: capitalize;
+    text-align: center;
     color: var(--red);
 }
 
