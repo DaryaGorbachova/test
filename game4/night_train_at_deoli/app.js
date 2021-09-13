@@ -4,7 +4,6 @@ const checkbtn = document.querySelectorAll('.submit');
 const answers1 = document.querySelectorAll('.form1 input');
 const labels = document.querySelectorAll('.io');
 const outputCorAns = document.querySelectorAll('.outputCorAns');
-const tryagainbtn = document.querySelectorAll('.try');
 const warning = document.querySelectorAll('.warning');
 
 const  dragaims = document.querySelectorAll('.dragaim span');
@@ -60,8 +59,6 @@ function checkQuestions () {
         }
         outputCorAns[1].style.opacity = '100%';
         outputCorAns[1].innerHTML = `${correct1}/${correctAnswers.length}`;
-        checkbtn[1].style.opacity = '0';
-        tryagainbtn[0].style.opacity = '100%';
         if (correct1 === correctAnswers.length) {
             warning[1].style.display = 'block';
                 warning[1].innerHTML = 'Congratulations!';
@@ -70,26 +67,11 @@ function checkQuestions () {
     }
 }
 
-function tryagain (ex) {
-    answers = [];
-    correct1 = 0;
-    if (ex === 1) {
-    for (let i = 0; i < labels.length; i++) {
-    labels[i].style.backgroundColor = 'var(--white)';
-    labels[i].style.color = 'var(--black)';
-    }
-    checkbtn[1].style.opacity = '100%';
-    tryagainbtn[0].style.opacity = '0%';
-}
-}
 
 checkbtn[1].addEventListener('click', ()=> {
     checkQuestions();
 })
 
-tryagainbtn[0].addEventListener('click', () => {
-    tryagain(1);
-})
 
 
 
