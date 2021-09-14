@@ -91,7 +91,6 @@
 
 .pictures {
     display: flex;
-    height: 20%;
 }
 
   .task {
@@ -190,6 +189,9 @@ transform: rotate(90deg);
     padding: 20px 0px 60px 0px;
     margin: 2px auto ;
     border-right: 1px solid var(--border-col)
+}
+.pictures {
+    max-height: 200px;
 }
 }
 
