@@ -108,7 +108,7 @@
   }
 
   .task1 {
-      display: block;
+      display:none;
       background-color: white;
       padding: 10px;
       border-radius: 15px;
