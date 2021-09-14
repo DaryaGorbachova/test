@@ -35,6 +35,16 @@
     grid-gap: 8px;
 }
 
+#menu {
+display: flex;
+}
+#menu a {
+    color: white;
+}
+#menu a:visited {
+    color: white;
+}
+
 .b1 > p {
     background-color: var(--red); 
     padding: 15px;  
