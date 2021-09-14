@@ -104,9 +104,15 @@ checkbtn[0].addEventListener('click', () => {
     checkPrelistening();
 })
 
-
+let elem;
 dragtext.forEach(dragtext => dragtext.addEventListener('click', ev => {
-    dragfield.appendChild(ev.target);
+    if (ev.target.parentElement.className === 'drag') elem = ev.target.id;
+   else  dragfield.appendChild(ev.target);
+}))
+
+dragaims.forEach(dragaims => dragaims.addEventListener('click', e => {
+ e.target.appendChild(document.getElementById(elem));
+ elem = 0;
 }))
 
 function dealWithInput () {

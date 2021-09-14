@@ -31,6 +31,7 @@ function drop(ev) {
     <div class='container'>
         <h1>The Night Train at Deoli</h1>
         <h3>by Ruskin Bond</h3>
+        <button id='menu'><a href='../menu/menu'>Menu</a></button>
     </div>
     <div class='container'>
         <p>Do the prelistening task first, then listen to the audio and do the rest of the exercises.</p>
@@ -45,7 +46,8 @@ function drop(ev) {
                     <p id='drag3' draggable="true" ondragstart="drag(event)">railway</p>
                     <p id='drag4' draggable="true" ondragstart="drag(event)">jungle</p>
                     <p id='drag5' draggable="true" ondragstart="drag(event)">whistle</p>
-             </div>    
+             </div>  
+             <div class='aimcontainer'>
              <div class='dragaim'>
                  <span id='aim1' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
                  <span id='aim2' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
@@ -53,14 +55,13 @@ function drop(ev) {
                  <span id='aim4' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
                  <span id='aim5' ondrop="drop(event)" ondragover="allowDrop(event)"></span>
              </div>
-            <div class='pictures'>
-                
+                <div class='pictures'>
                 <img src="staitionmaster.jpg" alt="staitionmaster" width='20%'>
                 <img src="shawl.jpg" alt="shawl" width='20%'>
                 <img src="whistle.jpg" alt="whistle" width='20%'>
                 <img src="railway.jpg" alt="railway" width='20%'>
-                <img src="jungle.jpg" alt="jungle" width='20%'>
-           
+                <img src="jungle.jpg" alt="jungle" width='20%'>  
+            </div>
             </div>
                 <p class='warning'></p>
             <div class='controls'>

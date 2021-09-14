@@ -32,6 +32,10 @@
     
 }
 
+#menu {
+    display: flex;
+}
+
 .drag {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -49,8 +53,9 @@
 
 .dragaim {
     display: flex;
+    margin: 0px auto;
     margin-bottom: 4px;
-    line-height: 0px;
+    line-height: 0px;    
 }
 .dragaim > span {
     width: 20%;
@@ -60,21 +65,13 @@
     margin: 5px 10px;
 }
 
-#aim1 {
+#aim1, #aim3 , #aim5{
     background-color: var(--lightyellow);
 }
-#aim2 {
+#aim2, #aim4 {
     background-color: var(--lightorange);
 }
-#aim3 {
-    background-color: var(--lightyellow);
-}
-#aim4 {
-    background-color: var(--lightorange);
-}
-#aim5 {
-    background-color: var(--lightyellow);
-}
+
 
   .outputCorAns {
     margin:auto;
@@ -94,14 +91,14 @@
 
 .pictures {
     display: flex;
-    
+    height: 20%;
 }
 
   .task {
     text-align: center;
     margin: 20px 0px;
     background-color: var(--yellow);
-    padding: 1px;
+    padding: 3px;
     border-radius: 15px;
     box-shadow: 1px 0px 5px var(--black);
     cursor: pointer;
@@ -112,7 +109,7 @@
   }
 
   .task1 {
-      display: none;
+      display: block;
       background-color: white;
       padding: 10px;
       border-radius: 15px;
@@ -180,6 +177,20 @@ body {
     background-attachment: fixed;
     background-position: center;
 
+}
+
+@media only screen and (max-width:  550px) {
+body {
+    background-size: 1800px;
+}
+.dragaim > span p{
+transform: rotate(90deg);
+}
+.dragaim > span {
+    padding: 20px 0px 60px 0px;
+    margin: 2px auto ;
+    border-right: 1px solid var(--border-col)
+}
 }
 
 
