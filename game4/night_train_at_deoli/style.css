@@ -180,7 +180,7 @@ body {
 
 @media only screen and (max-width:  550px) {
 body {
-    background-size: 1800px;
+    background-image: none;
 }
 .dragaim > span p{
 transform: rotate(90deg);
@@ -191,7 +191,13 @@ transform: rotate(90deg);
     border-right: 1px solid var(--border-col)
 }
 .pictures {
-    max-height: 200px;
+    max-height: 150px;
+}
+footer a:link {
+    color: var(--red);
+}
+footer a:visited {
+    color: var(--red);
 }
 }
 
