@@ -81,7 +81,8 @@ function checkPrelistening () {
     for (let i = 0; i < dragaims.length; i++){
         if (dragaims[i].children[0].id === dragAnswers[i]) {
             correct1++;
-        }
+            dragaims[i].style.backgroundColor = 'var(--green)';
+        } else dragaims[i].style.backgroundColor = 'var(--red)';
 }
 outputCorAns[0].style.opacity = '100%';
 outputCorAns[0].innerHTML = `${correct1}/${dragAnswers.length}`;

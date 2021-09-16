@@ -27,7 +27,7 @@ html {
     font-family: 'Tahoma';
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
-
+    border-radius: 5px;
   }
 a:link {
     font-weight: 200;
@@ -80,7 +80,7 @@ input {
 }
 
 button {
-    margin:auto;
+    margin: auto;
     margin-top: 20px;
     background-color: var(--red);
     border: none;
@@ -88,12 +88,15 @@ button {
     border-radius: 20px;
     color:white;
     font: bold 15px Verdana;
-    box-shadow: 0px 0px 3px hsl(0, 0%, 71%);
+    box-shadow: 0px 0px 3px var(--black);
+    transition: opacity 0.8s;
+    cursor:pointer;
 }
 
 button:hover {
-box-shadow:0px 0px 3px hsl(0, 0%, 30%);
+box-shadow:0px 0px 5px hsl(0, 0%, 30%);
 }
+
 
 footer {
     position: relative;
