@@ -6,6 +6,9 @@
     --blue: rgb(106, 121, 255);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .container {
     max-width: 1000px;  
