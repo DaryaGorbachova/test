@@ -20,7 +20,7 @@ const answers = [[3, 8, 11, 12, 16, 19],
 [5, 6, 10, 12, 17, 19],
 [4, 7, 9, 14, 15, 19],
 [3, 7, 11, 14, 16, 19]];
-let level = 5;
+let level = 1;
 
 const questions = [['Level 1', '', '',
 'business', 'buisness', 'bisness', 
