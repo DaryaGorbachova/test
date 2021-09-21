@@ -20,7 +20,7 @@ const answers = [[3, 8, 11, 12, 16, 19],
 [5, 6, 10, 12, 17, 19],
 [4, 7, 9, 14, 15, 19],
 [3, 7, 11, 14, 16, 19]];
-let level = 1;
+let level = 5;
 
 const questions = [['Level 1', '', '',
 'business', 'buisness', 'bisness', 
@@ -69,6 +69,10 @@ function jump (lilynum) {
 
 jump(where);
  
+window.onresize = function () {
+   jump(where);
+}
+
  for (let i = 0; i < questions[level - 1].length; i++) {
    task[i].innerHTML = questions[level - 1][i];
 }
@@ -112,7 +116,6 @@ function jumpScroll() {
 }
 
 function levelUp () {
-   level++;
    where = 1;
    position = 1;
    jump(where);
@@ -126,21 +129,22 @@ function levelUp () {
 
 nextLvlBtn.addEventListener('click', () => {
    if (correct < answers[level - 1].length) return false;
-
-   if (level - 1 === questions.length) {
-      warning.innerHTML = 'You are king of spelling!';
-      body.style.overflowY = 'auto';
-      nextLvlBtn.style.display = 'none';
-   } else {
+   level++;
+   if (level - 1 < questions.length) {
    levelUp();
    jumpScroll();
    correct = 0;
+   } else {
+      warning.innerHTML = "You've completed the game!";
+      body.style.overflowY = 'auto';
+      nextLvlBtn.style.display = 'none'; 
 }
 })
 
 exitbtn.addEventListener('click', () => {
    body.style.overflowY = 'auto';
    window.scroll(0, 0);
+   everything.style.display = 'none';
 })
 
 document.onkeydown = checkKey;
@@ -151,7 +155,8 @@ function checkKey(e) {
 
     if (e.keyCode == '38') {
         // up arrow
-        console.log("up")
+        where -= 3;
+        jump(where);
     }
     else if (e.keyCode == '40') {
         // down arrow
