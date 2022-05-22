@@ -4,6 +4,7 @@ const input = document.querySelectorAll('.questions input')
 const outputCorAns = document.getElementById('outputCorAns')
 const questionsContainer = document.querySelector('.questions')
 const questions = document.querySelectorAll('.questions div')
+const task = document.querySelector('.container');
 
 let correct = false;
 let questionNum = 0;
@@ -12,9 +13,11 @@ let answer = '';
 
 playbtn.addEventListener('click', () => {
   //  photos.style.opacity = '100%';
+    questionsContainer.style = 'display: block';
     questionsContainer.style.opacity = '100%';
     questions[0].style.opacity = '100%';
     outputCorAns.style.opacity = '100%';
+
 })
 
 checkbtn.forEach(checkbtn => checkbtn.addEventListener('click', () => {
@@ -58,6 +61,7 @@ function levelChange() {
     questionNum++;
     correct = false;
     questions[questionNum].style.opacity = '100%'
+    window.scroll(0, correctAnswers *( 138+16 ) + task.clientHeight)
 }
 
 function check () {
