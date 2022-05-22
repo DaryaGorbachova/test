@@ -8,6 +8,8 @@ const hint2 = document.getElementById('hint2');
 const hint3 = document.getElementById('hint3');
 const changebtn = document.getElementById('change');
 const hintbtn = document.getElementById('hint');
+const playbtn = document.getElementById('play');
+const game = document.getElementById('game');
 
 const animals = ['beaver', 'cat', "cow", 'crocodile', 'deer', 'dog',
 'duck', 'elephant', 'fox', 'giraffe', 'hare', 'hippo', 'horse',
@@ -21,11 +23,16 @@ let num1 = 0;
 let num2 = 0;
 let num3 = 0;
 
-change();
+   change();
+
+playbtn.addEventListener('click', () => {
+    game.style = 'display: block';
+ 
+})
 
 unsplashLink.onmouseenter = function () {
     unsplashLink.style.color = 'white';
-    linksUnsplash.style.color = 'var(--black)'
+    linksUnsplash.style.color = 'var(--black)';
     linksUnsplash.style.opacity = '100%';
 }
 unsplashLink.onmouseleave = function () {

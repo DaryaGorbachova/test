@@ -147,8 +147,9 @@ footer {
     color: var(--border-col)
 }
 
-.begin {
-
+.controls {
+    display: flex;
+    flex-direction: row;
 }
 
 #game {
@@ -159,6 +160,7 @@ footer {
     font-family: 'Tahoma';
     padding: 15px;
     border-radius: 5px;
+    display:none
 }
 
 #cards {
@@ -174,7 +176,7 @@ footer {
 }
 
 .pic img {
-    max-width: 270px;   
+    max-width: 270px; 
 }
 
 #game .pic {
