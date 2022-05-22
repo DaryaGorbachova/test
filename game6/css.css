@@ -177,12 +177,14 @@ footer {
 
 .pic img {
     max-width: 270px; 
+    max-height: 450px;
 }
 
 #game .pic {
 background-color: var(--background-col);
 border: 2px solid var(--border-col);
-height: 500px;
+height: 530px;
+width: 270px;
 padding: 8px;
 display: flex;
 justify-content: center;
@@ -191,6 +193,8 @@ margin: 0 auto;
 border-radius: 15px;
 }
 
-@media only screen and (max-width: 1000px) {
-
+@media only screen and (max-width: 904px) {
+#cards {
+    flex-direction: column;
+}
 }
