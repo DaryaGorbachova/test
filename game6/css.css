@@ -147,9 +147,9 @@ footer {
     color: var(--border-col)
 }
 
-.controls {
+.controls a {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #game {
