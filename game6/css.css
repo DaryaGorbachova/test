@@ -168,11 +168,19 @@ footer {
     flex-direction: row;   
     font-weight: bold;
     font-size: 28px;
+    text-align: center;
 }
 
 .pic {
     display:flex;
     flex-direction: column;
+    background-repeat:no-repeat;
+    background-size:92%;
+    background-position: center;
+}
+
+#third {
+    background-size:cover;   
 }
 
 .pic img {
@@ -187,11 +195,13 @@ height: 530px;
 width: 270px;
 padding: 8px;
 display: flex;
-justify-content: center;
-align-items: center;
 margin: 0 auto;
 border-radius: 15px;
 }
+
+#cards p {
+    background-color: var(--background-col);
+    }
 
 @media only screen and (max-width: 904px) {
 #cards {
