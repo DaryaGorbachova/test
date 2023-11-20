@@ -106,6 +106,7 @@ checkbtn[0].addEventListener('click', () => {
 })
 
 let elem;
+
 dragtext.forEach(dragtext => dragtext.addEventListener('click', ev => {
     if (ev.target.parentElement.className === 'drag') elem = ev.target.id;
    else  dragfield.appendChild(ev.target);

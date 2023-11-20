@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+
+.game {
+    height: 100vh;
+    background-size: cover;
+}
+.rules {
+    height: 100vh;
+    background-size: cover;
+    display:none;
+}
