@@ -156,4 +156,4 @@ if (correct1 === fillAnswers.length) {
 checkbtn[2].addEventListener('click', () => {
     dealWithInput();
     checkFill();
-})
+}) 
